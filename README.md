@@ -2,7 +2,7 @@
 
 ## A4Q1 Students Database Interaction
  
-This is a Java application using JDBC connection to the PostgreSQL database, allowing users to perform CRUD applications on the command line.
+This is a Java application using JDBC connection to the PostgreSQL database, allowing users to perform CRUD applications on the command line interface.
 
 From a students table, users can retrieve all students, add a student, update the email address and delete a student.
 
