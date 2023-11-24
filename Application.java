@@ -30,7 +30,7 @@ public class Application extends DatabaseCredentials {
                     //welcome message
                     String message = "==========================\n"+
                         "This is an application where you can display, add, delete students from the student table.\n"+
-                        "Respond to the prompt with the number associated with your desired action.\n\n"+
+                        "Respond to the prompt by entering the number associated with your desired action.\n\n"+
                 
                         "1. Display all students\n"+
                         "2. Add a new student\n"+
@@ -295,15 +295,15 @@ public class Application extends DatabaseCredentials {
 
     //Perform another action, or not
     public static boolean nextAction(boolean prompt) {
-        System.out.println("Would you like to do perform another action? (Y\\N)");
+        System.out.println("Would you like to do perform another action? (Y/N)");
         String next = scanner.nextLine().trim().toUpperCase();
 
-        while (!next.equals("Y") && !next.equals("N")) {
+        while (!next.equals("Y") && !next.equals("N") && !next.equals("YES") && !next.equals("NO")) {
             next = scanner.nextLine().trim().toUpperCase();
         }
-        if (next.equals("Y")) {
+        if (next.equals("Y") || next.equals("YES")) {
             prompt = true;
-        } else if (next.equals("N")) {
+        } else if (next.equals("N") || next.equals("NO")) {
             prompt = false;
         }
         return prompt;
