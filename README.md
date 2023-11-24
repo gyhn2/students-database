@@ -1,6 +1,8 @@
 # students-database
 
 ## A4Q1 Students Database Interaction
+
+* Youtube video: https://youtu.be/PzaqPamRVdc
  
 This is a Java application using JDBC connection to the PostgreSQL database, allowing users to perform CRUD applications on the command line interface.
 
